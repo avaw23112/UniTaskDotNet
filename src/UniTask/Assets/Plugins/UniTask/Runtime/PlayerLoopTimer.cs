@@ -1,4 +1,5 @@
-﻿#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+﻿#if !UNITASK_NETCORE
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
 using System.Threading;
 using System;
@@ -259,4 +260,5 @@ namespace Cysharp.Threading.Tasks
         }
     }
 }
+#endif
 
